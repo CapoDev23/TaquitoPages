@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --purple-heart-50: #faf5ff;
+    --purple-heart-100: #f2e8ff;
+    --purple-heart-200: #e8d6fe;
+    --purple-heart-300: #d6b6fc;
+    --purple-heart-400: #bd86fa;
+    --purple-heart-500: #a558f4;
+    --purple-heart-600: #8f37e6;
+    --purple-heart-700: #7524c2;
+    --purple-heart-800: #6824a5;
+    --purple-heart-900: #561e85;
+    --purple-heart-950: #390962;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 35%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.box form{
+    background: linear-gradient(65deg, rgba(102, 9, 121, 0.918), rgba(137, 8, 212, 0.699));
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 15px 15px 5px var(--purple-heart-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box form h1{
+    color: #bd86fa;
+    font-size: 34px;
+    font-weight: bold;
+}
+.subs-link{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    z-index: 2;
+}
+.subs-link img{
+    border-radius: 100%;
+    width: 45px;
+    margin-right: 5px;
+}
+.meta-auth{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.meta-auth i{
+    background-color: #8f37e6;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid #390962;
+    color: #561e85;
+}
+.meta-auth i:nth-child(2){
+    color: blue;
+}
+.meta-auth i:hover{
+    background-color: #561e85;
+    color: #e8d6fe;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.subs-link a{
+    background-color: #8f37e6;
+    width: 47%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #f2e8ff;
+    font-weight: 400;
+}
+.subs-link a:hover{
+    background-color: #7524c2;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+.boxInput{
+    width: 260px;
+    height: auto;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxInput input{
+    background-color: #8f37e6;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 35px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.boxInput input::placeholder{
+    color: #f2e8ff;
+    font-weight: 400;
+}
+.boxInput input[type="text"]{
+    color: #390962;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.boxInput input[type="password"]{
+    color: #390962;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.btn input{
+    margin-top: 8px;
+    color: #f2e8ff;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #8f37e6;
+    width: 125px;
+    height: 35px;
+}
+.btn input:hover{
+    background-color: #6824a5;
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+}
+.cartel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    padding: 20px;
+    background: linear-gradient(65deg, rgba(102, 9, 121, 0.918), rgba(137, 8, 212, 0.699));
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    z-index: 2;
+}
+
+.cartel i {
+    margin-right: 10px;
+    font-size: 36px;
+}
+
+.cartel i {
+    margin-right: 10px;
+}
+
+.cartel.active {
+    transform: translate(-50%, -50%) scale(4);
+}
